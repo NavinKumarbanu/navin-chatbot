@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navin Kumar - Professional Portfolio</title>
-    
+
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Custom Styles -->
     <style>
         /* Use the Inter font family */
@@ -36,6 +36,24 @@
             opacity: 1;
             transform: translateY(0);
         }
+        /* Centered text styling */
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+        .centered-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .centered-text h2 {
+            font-size: 1.5rem;
+            color: #666;
+        }
     </style>
 
     <!-- Dialogflow Messenger Stylesheet -->
@@ -43,12 +61,10 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-   
-         <h1>Welcome to Navin Chatbot. </h1>
-    <h2>Click on the right side chatbot icon to start conversation</h2>
-
-
-    
+    <div class="centered-text">
+        <h1>Welcome to Navin Chatbot</h1>
+        <h2>Click on the right side chatbot icon to start conversation</h2>
+    </div>
 
     <!-- ================================================== -->
     <!-- DIALOGFLOW MESSENGER INTEGRATION CODE              -->
@@ -78,7 +94,6 @@
       }
     </style>
     <!-- End of Dialogflow Messenger Code -->
-
 
     <!-- Custom JavaScript -->
     <script>
