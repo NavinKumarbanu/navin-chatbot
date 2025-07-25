@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navin's AI Assistant</title>
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+
+    df-messenger::part(titlebar),
+    df-messenger-chat-bubble,
+    df-messenger::part(bot-avatar),
+    df-messenger::part(typing-indicator),
+    df-messenger::part(input-label) {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Welcome to Navin Kumar's Website</h2>
+  <p>This is a demo of my AI assistant powered by Dialogflow CX and Gemini.</p>
+
+  <df-messenger
+    project-id="basic-cabinet-466904-a5"
+    agent-id="5559e60d-9d80-4304-8a7c-2df759c13280"
+    language-code="en"
+    max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="Navin Kumar"></df-messenger-chat-bubble>
+  </df-messenger>
+</body>
+</html>
